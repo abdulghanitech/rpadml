@@ -14,7 +14,7 @@ application = app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello!"
+    return "Welcome to RPAD-ML!"
 
 @app.route("/api", methods=['POST'])
 def make_predict():
