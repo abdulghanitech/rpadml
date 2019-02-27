@@ -31,9 +31,9 @@ def make_predict():
     #checking and predicting    
     try:
         checkprediction = inputScript.main(url)
-        prediction = classifier.predict(checkprediction)
+        prediction = int(classifier.predict(checkprediction))
         print(prediction)
-        result = {"prediction": str(prediction)}
+        result = {"prediction": prediction}
     except Exception as e:
         #print("Error")
         result = {"prediction": -9999}
