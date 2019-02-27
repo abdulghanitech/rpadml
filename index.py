@@ -14,4 +14,10 @@ url = input()
 #checking and predicting
 checkprediction = inputScript.main(url)
 prediction = classifier.predict(checkprediction)
+
+# print(prediction)
+
+# x = prediction.tolist()
+#print(type(prediction))
+
 print(prediction)

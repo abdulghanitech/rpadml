@@ -101,7 +101,7 @@ def SSLfinal_State(url):
             return 1 #phishing
         
     except Exception as e:
-        
+        print(e)
         return 1
 
 def domain_registration(url):
@@ -283,6 +283,7 @@ def age_of_domain(url):
         else:
             return 1
     except Exception as e:
+        #print("Here we go")
         print(e)
         return 0
         
@@ -328,3 +329,4 @@ def main(url):
     print(check)
     return check
 
+#main("http://wwww.techglows.com")
